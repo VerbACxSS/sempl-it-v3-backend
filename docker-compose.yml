@@ -1,0 +1,14 @@
+services:
+  sempl-it-backend:
+    container_name: 'sempl-it-backend'
+    image: 'sempl-it-backend'
+    build: '.'
+    restart: 'unless-stopped'
+    ports:
+      - '30010:30010'
+    environment:
+      - 'PYTHONUNBUFFERED=1'
+      - 'SEMPL_IT_ENDPOINT=${SEMPL_IT_ENDPOINT:-http://localhost:40010/v1}'
+      - 'SEMPL_IT_API_KEY=${SEMPL_IT_API_KEY:-123456789}'
+    healthcheck:
+      test: [ 'CMD', 'curl', '--fail', 'http://localhost:30010/api/v1/healthcheck' ]

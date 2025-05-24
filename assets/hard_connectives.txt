@@ -1,0 +1,183 @@
+abbenché
+a beneficio d\w*
+a cagione d\w*
+a carattere d\w*
+a condizione che
+a discapito d\w*
+a discrezione d\w*
+a dispetto d\w*
+a eccezione d\w*
+a esclusione d\w*
+affinché
+a fronte d\w*
+a giudizio d\w*
+ai fini d\w*
+ai margini d\w*
+ai sensi d\w*
+al cospetto d\w*
+al fine d\w*
+all'atto d\w*
+alla luce d\w*
+alla stregua d\w*
+allo scopo d\w*
+allo stato attuale
+allorquando
+allorché
+al netto d\w*
+al ricorrere d\w*
+altresì
+a mente d\w*
+a mo' d\w*
+ammesso che
+analogamente
+ancorché
+anziché
+a parità d\w*
+a patto che
+a pena d\w*
+a prescindere d\w*
+a scanso d\w*
+a seguito d\w*
+a stretto rigore
+a tal proposito
+a titolo esemplificativo
+a titolo d\w*
+attraverso
+benché
+ciò che
+coerentemente con
+conforme a\w*
+con la riserva che
+congiuntamente a\w*
+con l'ausilio d\w*
+con l'eccezione d\w*
+con l'intento d\w*
+connotato d\w*
+con riferimento a\w*
+con riguardo a\w*
+contestualmente a\w*
+conseguentemente a\w*
+d'altra parte
+d'altro canto
+di concerto con
+di conseguenza a\w*
+di riflesso
+entro i limiti d\w*
+facendo seguito a\w*
+fatto salvo
+fermi restando
+giacché
+giusta disposizione d\w*
+in accordo a\w*
+in accordo con
+in adempimento d\w*
+in aderenza a\w*
+in adesione a\w*
+in aggiunta a\w*
+in alternativa a\w*
+in analogia con
+in antitesi con
+in applicazione d\w*
+in armonia con
+in assenza d\w*
+in attinenza a\w*
+in attuazione d\w*
+in base alle circostanze
+in base a quanto precede
+in carenza d\w*
+in coerenza con
+in concomitanza con
+in concomitanza d\w*
+in conformità a\w*
+in conformità d\w*
+in connessione con
+in considerazione d\w*
+in costanza d\w*
+in difformità d\w*
+in esito a\w*
+in egual misura
+in funzione d\w*
+in ipotesi d\w*
+in luogo d\w*
+in merito a\w*
+in misura d\w*
+in modo da
+in opposizione a\w*
+in ordine a\w*
+in ossequio
+in ottemperanza
+in ottica
+in ottica d\w*
+in parallelo con
+in previsione d\w*
+in prospettiva d\w*
+in ragione d\w*
+in relazione a\w*
+in riferimento a\w*
+in risposta a\w*
+in sede d\w*
+in seno a\w*
+in sinergia con
+in sostituzione d\w*
+in tal caso
+in tale contesto
+in tal senso
+in taluni casi
+in tema d\w*
+in termini d\w*
+in ultima analisi
+in via esemplificativa
+in virtù d\w*
+in vista d\w*
+laddove
+limitatamente a\w*
+malgrado
+malgrado ciò
+malgrado questo
+nei termini d\w*
+nel caso in cui
+nell'ambito d\w*
+nell'eventualità d\w*
+nell'interesse d\w*
+nell'ipotesi d\w*
+nell'ipotesi in
+nell'ottica d\w*
+nella fattispecie
+nella prospettiva d\w*
+nel rispetto d\w*
+nonché
+oltre a\w*
+orbene
+\sove[\s,;\.]
+ovvero
+peraltro
+per contro
+per fatto d\w*
+per l'effetto
+per parte d\w*
+per quanto attiene a\w*
+per quanto concerne
+per quanto riguarda
+per tale motivo
+pertanto
+premesso che
+preso atto che
+purché
+pur non
+pur se
+qualora
+quantunque
+relativamente a\w*
+salvo diversa disposizione
+salvo diversa indicazione
+salvo quanto previsto
+sennonché
+sotto il profilo d\w*
+stante che
+sulla base d\w*
+sulla scorta d\w*
+talché
+tenendo presente che
+tenuto conto d\w*
+tutt'al più
+tuttalpiù
