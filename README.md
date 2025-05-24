@@ -5,7 +5,7 @@ Check out the [frontend](https://github.com/VerbACxSS/semp-it-v3-frontend) and t
 
 ## Getting started
 ### Pre-requisites
-This web application is developed using FastAPI framework and Hugging Face Transformers library. The following software are required to run the application:
+This web application is developed using FastAPI framework and langchain library. The following software are required to run the application:
 * Python (tested with version 3.12.8)
 * Pip (tested with version 23.2.1)
 
