@@ -23,8 +23,7 @@ async def simplify(request: SimplificationRequest,
         LOGGER.info(request)
 
         # Simplify the text
-        simplification_progress = simplification_service.simplify(request.text)
-        simplified_text = simplification_progress['explain']
+        simplified_text, simplification_progress = simplification_service.simplify(request.text, request.target)
 
         # Compare the texts
         comparison = analysis_service.do_text_comparison(text1=request.text, text2=simplified_text)

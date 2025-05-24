@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 
 class SimplificationProgress(BaseModel):
+    target: str = Field(default='expert', serialization_alias="target")
     original: str = Field(default='', serialization_alias="original")
     proofreading: str = Field(default='', serialization_alias="proofreading")
     lex: str = Field(default='', serialization_alias="lex")

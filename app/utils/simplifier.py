@@ -19,8 +19,10 @@ class AbstractSimplifier:
                                    api_key=SecretStr(os.getenv("SEMPL_IT_API_KEY", "")),
                                    model=self.step,
                                    max_tokens=4095,
-                                   temperature=0.1, top_p=0.2,
-                                   frequency_penalty=0.0, presence_penalty=0.0)
+                                   temperature=0.1,
+                                   top_p=0.2,
+                                   frequency_penalty=0.0,
+                                   presence_penalty=0.0)
 
     def simplify(self, _progress: SimplificationProgress):
         print(f"Running {self.step} simplification")

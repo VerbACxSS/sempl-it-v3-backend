@@ -1,3 +1,5 @@
+from typing import Tuple
+
 from langgraph.constants import START, END
 from langgraph.graph import StateGraph
 
@@ -41,13 +43,19 @@ class SimplificationService:
         workflow.add_edge("sentence_splitter_node", "nominalizations_node")
         workflow.add_edge("nominalizations_node", "verbs_node")
         workflow.add_edge("verbs_node", "sentence_reorganizer_node")
-        workflow.add_edge("sentence_reorganizer_node", "explain_node")
+        workflow.add_conditional_edges("sentence_reorganizer_node", lambda state: state.target == "common", {True: "explain_node", False: END})
         workflow.add_edge("explain_node", END)
 
         # Compile workflow
         self.chain = workflow.compile()
 
-    def simplify(self, text_to_simplify: str) -> SimplificationProgress:
+    def simplify(self, text_to_simplify: str, target: str) -> Tuple[str, SimplificationProgress]:
         progress = SimplificationProgress()
+        progress.target = target
         progress.original = text_to_simplify
-        return self.chain.invoke(progress)
+
+
+        progress = self.chain.invoke(progress)
+        if target == "common":
+            return progress["explain"], progress
+        return progress["sentence_reorganizer"], progress
