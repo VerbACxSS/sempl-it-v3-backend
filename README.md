@@ -8,7 +8,7 @@ The SEMPL-IT web app consists of the following repositories:
 - Inference Module: [GitHub Repository](https://github.com/VerbACxSS/semp-it-v3-intefence)
 - LLMs Collection: [HuggingFace Collection](https://huggingface.co/collections/VerbACxSS/sempl-it-v3-awq-6817ea4f843804006965f110)
 
-## Getting started
+## Getting Started
 ### Pre-requisites
 This web application is developed using FastAPI framework and langchain library. The following software are required to run the application:
 * Python (tested with version 3.12.8)
