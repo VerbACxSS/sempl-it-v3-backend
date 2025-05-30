@@ -6,6 +6,9 @@ venv
 .venv
 __pycache__
 
+.git
+.github
+
 LICENSE
 README.md
 Dockerfile
