@@ -11,5 +11,9 @@ RUN uv pip install --no-cache-dir --system -r requirements.txt
 # Copy all files in server directory
 COPY . .
 
+RUN rm -rf /tmp/* \
+    && rm -rf /usr/uv \
+    && rm -rf /usr/uvx
+
 # Run FastAPI application
 CMD ["uvicorn", "app.app:app", "--host=0.0.0.0", "--port=30010", "--log-level=info", "--workers=2", "--timeout-keep-alive=120"]
