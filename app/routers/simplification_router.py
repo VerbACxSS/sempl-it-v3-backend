@@ -1,32 +1,37 @@
 import logging
-import os
 from typing import Annotated
 
 from fastapi import APIRouter, HTTPException, Depends
 
 from ..models.SimplificationRequest import SimplificationRequest
 from ..models.SimplificationResponse import SimplificationResponse
-from ..services.simplification_service import SimplificationService
+from ..services import get_analysis_service, get_simplification_service, MonitoringService, get_monitoring_service
 from ..services.analysis_service import AnalysisService
+from ..services.simplification_service import SimplificationService
 
 # Initialize logging
-LOGGER = logging.getLogger()
-LOGGER.setLevel(logging.DEBUG)
+logger = logging.getLogger()
 
 router = APIRouter()
 
+
 @router.post("/", response_model=SimplificationResponse)
 async def simplify(request: SimplificationRequest,
-                   analysis_service: Annotated[AnalysisService, Depends(AnalysisService)],
-                   simplification_service: Annotated[SimplificationService, Depends(SimplificationService)]):
+                   analysis_service: Annotated[AnalysisService, Depends(get_analysis_service)],
+                   monitoring_service: Annotated[MonitoringService, Depends(get_monitoring_service)],
+                   simplification_service: Annotated[SimplificationService, Depends(get_simplification_service)]):
     try:
-        LOGGER.info(request)
+        logger.info(request)
 
         # Simplify the text
         simplified_text, simplification_progress = simplification_service.simplify(request.text, request.target)
 
         # Compare the texts
         comparison = analysis_service.do_text_comparison(text1=request.text, text2=simplified_text)
+
+        # Save the comparison result if consent is given
+        if request.consent:
+            monitoring_service.send_text_simplification_result(text_simplification_result=simplification_progress)
 
         # Return the simplification
         return SimplificationResponse(
@@ -38,6 +43,5 @@ async def simplify(request: SimplificationRequest,
             diff=comparison.diff_evaluation
         )
     except Exception as exception:
-        print(exception)
-        LOGGER.error('An exception occurred:\n{}'.format(exception))
-        raise HTTPException(status_code=500, detail="Prediction Exception")
+        logger.exception("An error occurred during text simplification.")
+        raise HTTPException(status_code=500, detail="An error occurred during text simplificatio.")

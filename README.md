@@ -3,9 +3,10 @@ This is the backend of SEMPL-IT, a web app designed to simplify Italian administ
 
 ## WebApp
 The SEMPL-IT web app consists of the following repositories:
-- Frontend: [GitHub Repository](https://github.com/VerbACxSS/semp-it-v3-frontend)
-- Backend: [GitHub Repository](https://github.com/VerbACxSS/semp-it-v3-backend)
-- Inference Module: [GitHub Repository](https://github.com/VerbACxSS/semp-it-v3-intefence)
+- Frontend: [GitHub Repository](https://github.com/VerbACxSS/sempl-it-v3-frontend)
+- Backend: [GitHub Repository](https://github.com/VerbACxSS/sempl-it-v3-backend)
+- Monitoring Module: [GitHub Repository](https://github.com/VerbACxSS/sempl-it-v3-monitoring)
+- Inference Module: [GitHub Repository](https://github.com/VerbACxSS/sempl-it-v3-inference)
 - LLMs Collection: [HuggingFace Collection](https://huggingface.co/collections/VerbACxSS/sempl-it-v3-awq-6817ea4f843804006965f110)
 
 ## Getting Started
@@ -23,6 +24,8 @@ The application can be configured using the following environment variable:
 PYTHONUNBUFFERED=1
 SEMPL_IT_ENDPOINT=...
 SEMPL_IT_API_KEY=...
+MONITORING_ENDPOINT=...
+MONITORING_API_KEY=...
 ```
 
 ### Using `python` and `pip`

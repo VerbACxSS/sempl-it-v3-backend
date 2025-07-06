@@ -10,5 +10,7 @@ services:
       - 'PYTHONUNBUFFERED=1'
       - 'SEMPL_IT_ENDPOINT=${SEMPL_IT_ENDPOINT:-http://localhost:40010/v1}'
       - 'SEMPL_IT_API_KEY=${SEMPL_IT_API_KEY:-123456789}'
+      - 'MONITORING_ENDPOINT=${MONITORING_ENDPOINT:-http://localhost:30011/api/v1}'
+      - 'MONITORING_API_KEY=${MONITORING_API_KEY:-123456789}'
     healthcheck:
       test: [ 'CMD', 'curl', '--fail', 'http://localhost:30010/api/v1/healthcheck' ]
