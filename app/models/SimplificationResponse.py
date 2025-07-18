@@ -12,7 +12,6 @@ class SimplificationProgress(BaseModel):
     connectives: str = Field(default='', serialization_alias="connectives")
     expressions: str = Field(default='', serialization_alias="expressions")
     sentence_splitter: str = Field(default='', serialization_alias="sentence_splitter")
-    nominalizations: str = Field(default='', serialization_alias="nominalizations")
     verbs: str = Field(default='', serialization_alias="verbs")
     sentence_reorganizer: str = Field(default='', serialization_alias="sentence_reorganizer")
     explain: str = Field(default='', serialization_alias="explain")

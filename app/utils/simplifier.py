@@ -89,13 +89,9 @@ class SentenceSplitter(AbstractSimplifier):
     def __init__(self):
         super().__init__(prev_step="expressions", step="sentence_splitter", prompt_name="5_sentence_splitter")
 
-class NominalizationsSimplifier(AbstractSimplifier):
-    def __init__(self):
-        super().__init__(prev_step="sentence_splitter", step="nominalizations", prompt_name="6_nominalizations")
-
 class VerbsSimplifier(AbstractSimplifier):
     def __init__(self):
-        super().__init__(prev_step="nominalizations", step="verbs", prompt_name="7_verbs")
+        super().__init__(prev_step="sentence_splitter", step="verbs", prompt_name="7_verbs")
 
 class SentenceReorganizer(AbstractSimplifier):
     def __init__(self):
