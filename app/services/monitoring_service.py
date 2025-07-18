@@ -9,7 +9,7 @@ from app.models.SimplificationResponse import SimplificationProgress
 
 class MonitoringService:
     def __init__(self):
-        self.base_url=os.getenv("MONITORING_ENDPOINT", "http://localhost:30011/api/v1")
+        self.base_url=os.getenv("MONITORING_ENDPOINT", "http://localhost:30050/api/v1")
         self.api_key=os.getenv("MONITORING_API_KEY", "123456789")
         self.logger = logging.getLogger()
 
