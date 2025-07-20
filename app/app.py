@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .services import MonitoringService
 from .services.analysis_service import AnalysisService
+from .services.monitoring_service import MonitoringService
 from .services.simplification_service import SimplificationService
 
 load_dotenv()
