@@ -3,11 +3,12 @@ from typing import Annotated
 
 from fastapi import APIRouter, HTTPException, Depends
 
-from ..models.SimplificationRequest import SimplificationRequest
-from ..models.SimplificationResponse import SimplificationResponse
-from ..services import get_analysis_service, get_simplification_service, MonitoringService, get_monitoring_service
-from ..services.analysis_service import AnalysisService
-from ..services.simplification_service import SimplificationService
+from app.models.SimplificationRequest import SimplificationRequest
+from app.models.SimplificationResponse import SimplificationResponse
+from app.services.analysis_service import AnalysisService
+from app.services.monitoring_service import MonitoringService
+from app.services.simplification_service import SimplificationService
+from app.services.service_loader import get_analysis_service, get_monitoring_service, get_simplification_service
 
 # Initialize logging
 logger = logging.getLogger()

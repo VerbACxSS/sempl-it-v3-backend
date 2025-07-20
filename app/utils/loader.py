@@ -1,6 +1,6 @@
 from typing import List
 
-from . import fs_utils
+from app.utils import fs_utils
 
 
 def load_prompt(prompt_name: str) -> str:
