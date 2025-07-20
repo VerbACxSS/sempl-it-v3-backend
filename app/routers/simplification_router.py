@@ -6,8 +6,9 @@ from fastapi import APIRouter, HTTPException, Depends
 from app.models.SimplificationRequest import SimplificationRequest
 from app.models.SimplificationResponse import SimplificationResponse
 from app.services.analysis_service import AnalysisService
+from app.services.monitoring_service import MonitoringService
 from app.services.simplification_service import SimplificationService
-from app.services.service_loader import get_analysis_service, get_monitoring_service, MonitoringService
+from app.services.service_loader import get_analysis_service, get_monitoring_service, get_simplification_service
 
 # Initialize logging
 logger = logging.getLogger()
