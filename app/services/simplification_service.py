@@ -5,7 +5,7 @@ from langgraph.graph import StateGraph
 
 from app.models.SimplificationResponse import SimplificationProgress
 from app.utils.simplifier import Proofreader, LexNormalizer, ConnectivesSimplifier, \
-    ExpressionsSimplifier, SentenceSplitter, NominalizationsSimplifier, VerbsSimplifier, SentenceReorganizer, Explainer
+    ExpressionsSimplifier, SentenceSplitter, VerbsSimplifier, SentenceReorganizer, Explainer
 
 
 class SimplificationService:
