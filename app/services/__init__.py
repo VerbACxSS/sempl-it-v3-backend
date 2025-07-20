@@ -1,8 +1,8 @@
 from fastapi import Request
 
-from app.services.analysis_service import AnalysisService
-from app.services.monitoring_service import MonitoringService
-from app.services.simplification_service import SimplificationService
+from .analysis_service import AnalysisService
+from .monitoring_service import MonitoringService
+from .simplification_service import SimplificationService
 
 
 def get_analysis_service(request: Request) -> AnalysisService:
