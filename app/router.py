@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from .routers import healthcheck_router
-from .routers import simplification_router
-from .routers import analysis_router
+from app.routers import healthcheck_router
+from app.routers import simplification_router
+from app.routers import analysis_router
 
 router = APIRouter()
 

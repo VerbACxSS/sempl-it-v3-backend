@@ -5,8 +5,8 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from app.models.AnalysisRequest import TextAnalysisRequest, ComparisonAnalysisRequest
 from app.models.AnalysisResponse import TextAnalysisResponse, ComparisonAnalysisResponse
-from app.services import get_analysis_service, get_monitoring_service, MonitoringService
 from app.services.analysis_service import AnalysisService
+from app.services.service_loader import get_analysis_service, get_monitoring_service, MonitoringService
 
 # Initialize logging
 logger = logging.getLogger()

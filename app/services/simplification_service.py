@@ -3,8 +3,8 @@ from typing import Tuple
 from langgraph.constants import START, END
 from langgraph.graph import StateGraph
 
-from ..models.SimplificationResponse import SimplificationProgress
-from ..utils.simplifier import Proofreader, LexNormalizer, ConnectivesSimplifier, \
+from app.models.SimplificationResponse import SimplificationProgress
+from app.utils.simplifier import Proofreader, LexNormalizer, ConnectivesSimplifier, \
     ExpressionsSimplifier, SentenceSplitter, NominalizationsSimplifier, VerbsSimplifier, SentenceReorganizer, Explainer
 
 
