@@ -7,9 +7,9 @@ uvicorn==0.35.0
 it-core-news-lg@https://github.com/explosion/spacy-models/releases/download/it_core_news_lg-3.8.0/it_core_news_lg-3.8.0-py3-none-any.whl
 italian-ats-evaluator==3.0.2
 
-langchain==0.3.26
-langgraph==0.5.1
-langchain-openai==0.3.27
+langchain==0.3.20
+langgraph==0.3.5
+langchain-openai==0.3.7
 
 requests==2.32.4
 
