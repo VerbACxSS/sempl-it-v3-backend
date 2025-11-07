@@ -1,11 +1,11 @@
-python-dotenv==1.1.1
+python-dotenv==1.2.1
 
-fastapi==0.116.1
-pydantic==2.11.7
-uvicorn==0.35.0
+fastapi==0.121.0
+pydantic==2.12.4
+uvicorn==0.38.0
 
 it-core-news-lg@https://github.com/explosion/spacy-models/releases/download/it_core_news_lg-3.8.0/it_core_news_lg-3.8.0-py3-none-any.whl
-italian-ats-evaluator==3.0.2
+italian-ats-evaluator==3.0.3
 
 langchain==0.3.20
 langgraph==0.3.5
